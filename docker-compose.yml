@@ -1,0 +1,11 @@
+services:
+     app:
+        build:
+           context: .
+           dockerfile: ./Dockerfile
+        volumes:          #Volume Mounting of Currentdirectory
+           - ./:/home/app
+        ports: 
+         - 8000:8000      
+
+      
